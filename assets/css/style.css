@@ -19,4 +19,58 @@
     justify-content: center;
   }
   
+  .cursor {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border-radius: 100%;
+    cursor: none;
+    z-index: 100;
+    transition: background .1s ease;
+    mix-blend-mode: difference;
+  }
+  
+  .cursor .link {
+    position: absolute;
+    top: 0;
+    color: white;
+    animation: spin 5s infinite linear;
+    transform-origin: center center;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .cursor .icon {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    line-height: var(--circle-size);
+    position: absolute;
+    top: 0;
+    text-align: center;
+  }
+  
+  .cursor:after {
+    display: block;
+    content: '';
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    z-index: -1;
+    border: var(--second-circle-border) solid white;
+    left: -9px;
+    top: -9px;
+    position: relative;
+    transition: opacity .2s ease, transform .3s ease;
+  }
+  
+  .cursor.active {
+    background: rgba(0,0,0,0);
+  }
+  
+  .cursor.active:after {
+    opacity: 0;
+    transform: scale(2);
+  }
+  
   
