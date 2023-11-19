@@ -1,0 +1,22 @@
+:root {
+    --circle-size: 25px;
+    --letter-width: 14px;
+    --letter-space: 60px;
+    --font-size: 10px;
+    --letter-spacing-x: 20;
+    --second-circle-border: 4px;
+    --second-circle-size: 35px;
+  }
+  
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    background-color: #191a1e;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
