@@ -73,4 +73,17 @@
     transform: scale(2);
   }
   
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none !important;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 20px 40px;
+  }
+  
+  
   
